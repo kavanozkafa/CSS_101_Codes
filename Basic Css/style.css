@@ -1,0 +1,231 @@
+#sel{
+    background-color:yellowgreen;
+    font-family:monospace;
+    font-size: 23px;
+    color:black;
+    text-transform:none;
+    font-weight: bolder 200;
+    
+}
+p{
+    text-transform: uppercase;
+color: white!important;
+    /* important ile farklı yerlerde değişmememsini istediğimiz bölgelerin özelliklerini static ayarlayabiliriz.
+    Böylece etiketler arası çatışmayı önleriz.
+    
+    */
+}
+#num1{
+background-color: chocolate;
+}
+
+
+#num1 , p::first-line{
+    font-variant: small-caps
+    color: pink;
+    font-family: serif;
+    font-size: 1em;
+    text-transform: capitalize;
+    
+    
+
+}
+#num1 > h3{
+    /*
+    > işareti childe selector yapmaya yarar.kombinleme işlemini gerçekleştirir.
+    
+    
+    descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+    
+    
+    
+    */
+
+    color: grey;
+    font-family: monospace;
+    font-size: 35px;
+}
+
+#num2 > h4{
+color: olive;
+}
+
+.direction{
+    
+    text-transform: uppercase;
+    font-weight:lighter;
+    font-family:sans-serif;
+    text-decoration: underline;
+}
+
+a{
+    color: maroon;
+    font-family: fantasy;
+    text-decoration: none;
+    font-size: 2em;
+     
+    
+}
+a:hover{
+    color: crimson;
+    font-family: fantasy;
+    text-decoration: none;
+    font-size: 2em;
+     
+    
+}
+a:active{
+    color: mediumseagreen;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+     
+    
+}
+
+*{
+    /* burası body yerine geçer.  *  universal selector olarak kullanhılır */
+    
+    background-color: whitesmoke;
+
+}
+
+details.can{
+    background-color: hotpink;
+    letter-spacing: 4px;
+    line-height: 50px;
+    
+}
+
+canvas.can{
+    
+    opacity: 0.7;
+    background-image: url(https://i.pinimg.com/280x280_RS/8e/36/9e/8e369eaa32c30099ee14af2bcd5e8be1.jpg),url(https://images.unsplash.com/photo-1530482817083-29ae4b92ff15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=44f4aebbd1e1371d5bf7dc22016c5d29&auto=format&fit=crop&w=500&q=60);   
+    
+    
+    /*background-image:url(minim.jpg),url(inim.jpg);*/
+    
+    background-repeat: no-repeat;
+    background-position: center,top left;
+    background-size: 300px %100;
+    
+    width: %100;
+    height: 300px;
+}
+
+
+#mars{
+    background-color: blueviolet;
+    color: aquamarine;
+    font-family: cursive;
+    font-size: 24px;
+    text-decoration: overline;
+    text-transform: capitalize;
+    
+}
+
+#mars:hover{
+    background-color: blueviolet;
+    color: red;
+    font-family: cursive;
+    font-size: 24px;
+    text-decoration: overline;
+    text-transform: capitalize;
+    
+    
+}
+
+
+li:nth-child(2),li:nth-child(3) {
+    color: olive;
+}
+
+li:nth-child(even){
+    font-family: sans-serif;
+}
+
+
+
+#divMargin{
+    
+    width: %50;
+    height: 50px;
+    background-color: darkcyan;
+    margin: 45px;
+    padding: center;
+    float: left;
+    border-top-style: solid;
+    border-bottom-style: ridge;
+    border-bottom-color: darkmagenta;
+    border-top-color: darkorchid;
+    border-left-style: dashed;
+    border-left-color: aqua;
+    border-right-color: aquamarine;
+    border-right-style: groove;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    border-left-width: 12px;
+    border-right-width: 12px;
+    
+    
+    /*border: 4px dotted pink; */
+   
+    
+    
+}
+
+
+#divMargin:hover{
+    
+    opacity: 0.5;
+    
+    border-radius: 150px;
+}
+
+
+
+#box{
+    
+    margin: 25px 25px 25px 25px;
+    padding:65px;
+    float: left;
+    border-top-style: solid;
+    border-bottom-style: ridge;
+    border-bottom-color: darkmagenta;
+    border-top-color: darkorchid;
+    border-left-style: dashed;
+    border-left-color: aqua;
+    border-right-color: aquamarine;
+    border-right-style: groove;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    border-left-width: 12px;
+    border-right-width: 12px;
+   
+    
+}
+
+
+#button{
+    
+    margin: 25px 25px 25px 25px;
+    padding:65px;
+   
+    background: olive;
+    background: -moz-linear-gradient(top , red %0, blue %100);
+    background: -webkit-linear-gradient(top , red %0, blue %100);
+    background: linear-gradient(top , red %0, blue %100);
+}
+
+
+#button:hover{
+   
+    background: olive;
+    background: -moz-linear-gradient(bottom , red %0, blue %100);
+    background: -webkit-linear-gradient(bottom , red %0, blue %100);
+    background: linear-gradient(bottom , red %0, blue %100);
+    box-shadow: 5px 5px 5px 5px maroon;
+}
